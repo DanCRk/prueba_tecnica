@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dann.pruebatecnica"
+    namespace = "com.ryutec.pruebatecnica"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dann.pruebatecnica"
+        applicationId = "com.ryutec.pruebatecnica"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

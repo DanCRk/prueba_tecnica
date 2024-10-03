@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/IAutorizaFragment"
+        android:icon="@drawable/ic_bank"
+        android:title="@string/iautoriza" />
+
+    <item
+        android:id="@+id/rickAndMortyFragment"
+        android:icon="@drawable/ic_image"
+        android:title="@string/r_m" />
+</menu>

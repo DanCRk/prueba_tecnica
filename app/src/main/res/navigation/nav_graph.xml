@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/IAutorizaFragment">
+
+    <fragment
+        android:id="@+id/IAutorizaFragment"
+        android:name="com.ryutec.pruebatecnica.ui.view.tabs.IAutorizaFragment"
+        android:label="fragment_i_autoriza"
+        tools:layout="@layout/fragment_i_autoriza" />
+    <fragment
+        android:id="@+id/rickAndMortyFragment"
+        android:name="com.ryutec.pruebatecnica.ui.view.tabs.RickAndMortyFragment"
+        android:label="fragment_rick_and_morty"
+        tools:layout="@layout/fragment_rick_and_morty" />
+</navigation>

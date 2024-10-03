@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">pruebatecnica</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iautoriza">iAutoriza</string>
+    <string name="r_m"><![CDATA[R&M]]></string>
+    <string name="placeholder" />
 </resources>

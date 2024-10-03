@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#2d2d2d</color>
+    <color name="white">#f5f5f5</color>
+    <color name="gris">#BABABA</color>
 
-    <color name="bg_bottom_menu">#F5F5FF</color>
 
-    <color name="icon_not_focus">#ffbcaf</color>
-    <color name="icon_focus">#E65555</color>
+    // Colores Principales Day
+    <color name="primary">#658c3d</color>
+    <color name="primary_dark">#E65555</color>
+    <color name="focused">#E65555</color>
+    <color name="not_focused">#FFFFFF</color>
+    <color name="primary_light">#ffbcaf</color>
+    // Colores Secundarios Day
+    <color name="secondary">#ffebee</color>
+    <color name="secondary_dark">#ccb9bc</color>
+    <color name="secondary_light">#ffffff</color>
+
+    <color name="bg_bottom_menu">#F6FFF5</color>
+
+    <color name="icon_not_focus">#ADDC6A</color>
+    <color name="icon_focus">#658c3d</color>
 </resources>

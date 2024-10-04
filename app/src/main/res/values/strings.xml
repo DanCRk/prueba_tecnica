@@ -8,4 +8,6 @@
     <string name="bienvenido">Bienvenido</string>
     <string name="salir">Salir</string>
     <string name="tienes_pagos_por_autorizar">Tienes pagos por autorizar:</string>
+    <string name="soporte">Soporte: </string>
+    <string name="en_proceso">En proceso</string>
 </resources>

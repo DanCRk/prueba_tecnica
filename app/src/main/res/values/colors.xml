@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#2d2d2d</color>
-    <color name="white">#f5f5f5</color>
+    <color name="negro">#2d2d2d</color>
+    <color name="blanco">#f5f5f5</color>
     <color name="gris">#BABABA</color>
 
 
@@ -20,4 +20,6 @@
 
     <color name="icon_not_focus">#ADDC6A</color>
     <color name="icon_focus">#658c3d</color>
+
+    <color name="transparent">#00FFFFFF</color>
 </resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_remsa_may"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="500"
+        android:textColorHint="@color/negro"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toTopOf="@id/typeOperation"
+        app:layout_constraintStart_toEndOf="@id/icono"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="Cambio de Estatus"
+        android:textColor="@color/primary"
+        android:textColorHint="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/totalOperation"
+        app:layout_constraintStart_toEndOf="@id/icono" />
+
+    <TextView
+        android:id="@+id/authOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Autorizaste"
+        android:textColor="@color/negro"
+        android:textColorHint="@color/negro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/totalAuthOperation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalAuthOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="100"
+        android:textColor="@color/negro"
+        android:textColorHint="@color/negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authOperation"/>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icono"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="@color/gris" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

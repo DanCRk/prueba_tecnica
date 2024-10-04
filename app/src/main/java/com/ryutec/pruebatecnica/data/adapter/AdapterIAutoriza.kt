@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ryutec.pruebatecnica.R
-import com.ryutec.pruebatecnica.data.model.OperationsModel
+import com.ryutec.pruebatecnica.data.model.operations.OperationsModel
 import com.ryutec.pruebatecnica.databinding.OperationBinding
 
 class AdapterIAutoriza (
@@ -31,7 +31,7 @@ class OperationsHolder(val view: View) : RecyclerView.ViewHolder(view) {
         bind.totalOperation.text = operationsModel.totalOperation.toString()
         bind.typeOperation.text = operationsModel.operationType
         bind.totalAuthOperation.text = operationsModel.totalOperationAuth.toString()
-        if (operationsModel.isAuthorized) bind.authOperation.visibility = View.VISIBLE
+        if (!operationsModel.isAuthorized) bind.authOperation.visibility = View.GONE
         bind.icono.setImageResource(operationsModel.icon)
 
     }

@@ -16,7 +16,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ryutec.pruebatecnica.data.Resource
 import com.ryutec.pruebatecnica.data.adapter.AdapterIAutoriza
-import com.ryutec.pruebatecnica.data.model.OperationsModel
+import com.ryutec.pruebatecnica.data.model.operations.OperationsModel
 import com.ryutec.pruebatecnica.databinding.FragmentIAutorizaBinding
 import com.ryutec.pruebatecnica.ui.viewmodel.IAutorizaViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -118,14 +118,17 @@ class IAutorizaFragment : Fragment() {
     private fun manageFlow(uiState: Resource<List<OperationsModel>>?) {
         when (uiState) {
             is Resource.Success -> {
+                // Si se necesita que este constantemente
+                // refrescando se elimina el condicional
+                if (list.isEmpty()){
+                    list.addAll(uiState.result)
 
-                list.addAll(uiState.result)
+                    adapter.notifyDataSetChanged()
 
-                adapter.notifyDataSetChanged()
+                    binding.progresBarIAutoriza.visibility = View.GONE
 
-                binding.progresBarIAutoriza.visibility = View.GONE
-
-                binding.rv.visibility = View.VISIBLE
+                    binding.rv.visibility = View.VISIBLE
+                }
             }
 
             Resource.Loading -> {

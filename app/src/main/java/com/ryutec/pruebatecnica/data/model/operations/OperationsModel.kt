@@ -1,4 +1,4 @@
-package com.ryutec.pruebatecnica.data.model
+package com.ryutec.pruebatecnica.data.model.operations
 
 import com.google.gson.annotations.SerializedName
 

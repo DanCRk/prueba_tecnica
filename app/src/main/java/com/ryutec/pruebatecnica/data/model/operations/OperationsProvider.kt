@@ -1,4 +1,4 @@
-package com.ryutec.pruebatecnica.data.model
+package com.ryutec.pruebatecnica.data.model.operations
 
 import com.ryutec.pruebatecnica.R
 import javax.inject.Inject

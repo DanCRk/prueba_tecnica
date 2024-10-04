@@ -1,0 +1,32 @@
+[
+	{
+		"operation_type": "Cambio de Estatus",
+		"total_operation": 500,
+		"total_operation_auth":100,
+		"is_authorized" : true
+	},
+	{
+		"operation_type": "Remesas",
+		"total_operation": 700,
+		"total_operation_auth":100,
+		"is_authorized" : false
+	},
+	{
+		"operation_type": "Remesas Mayores",
+		"total_operation": 600,
+		"total_operation_auth":200,
+		"is_authorized" : false
+	},
+	{
+		"operation_type": "Canjes",
+		"total_operation": 600,
+		"total_operation_auth":10,
+		"is_authorized" : false
+	},
+	{
+		"operation_type": "Pago por Anticipado",
+		"total_operation": 700,
+		"total_operation_auth":200,
+		"is_authorized" : false
+	}
+]

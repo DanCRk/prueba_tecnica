@@ -31,7 +31,7 @@ class OperationsHolder(val view: View) : RecyclerView.ViewHolder(view) {
         bind.totalOperation.text = operationsModel.totalOperation.toString()
         bind.typeOperation.text = operationsModel.operationType
         bind.totalAuthOperation.text = operationsModel.totalOperationAuth.toString()
-        if (!operationsModel.isAuthorized) bind.authOperation.visibility = View.GONE
+        if (!operationsModel.isAuthorized) bind.authOperation.visibility = View.INVISIBLE
         bind.icono.setImageResource(operationsModel.icon)
 
     }

@@ -5,6 +5,7 @@ import android.content.Intent
 import com.ryutec.pruebatecnica.data.model.rickandmorty.Result
 import java.io.Serializable
 import androidx.core.content.ContextCompat.startActivity
+import com.ryutec.pruebatecnica.data.database.entity.CharacterEntity
 import com.ryutec.pruebatecnica.ui.view.CharacterActivity
 
 data class Character (
@@ -29,6 +30,16 @@ fun Result.toDomain() =
         location.name
     )
 
+fun CharacterEntity.toDomain() =
+    Character(
+        name,
+        id,
+        status,
+        species,
+        gender,
+        image,
+        location
+    )
 fun Character.sendToActivity(context: Context){
     val intent = Intent(context, CharacterActivity::class.java)
     intent.putExtra("character", this)

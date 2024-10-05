@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.ryutec.pruebatecnica.data.Repository
 import com.ryutec.pruebatecnica.data.Resource
 import com.ryutec.pruebatecnica.data.model.operations.OperationsModel
+import com.ryutec.pruebatecnica.domain.GetCharacters
 import com.ryutec.pruebatecnica.domain.model.Character
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
@@ -15,7 +16,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RickAndMortyViewModel @Inject constructor(
-    private val repository: Repository
+    private val getCharacters: GetCharacters
 ) : ViewModel(){
 
     private val _uploadFlow = MutableLiveData<Resource<List<Character>>?>(null)
@@ -25,7 +26,7 @@ class RickAndMortyViewModel @Inject constructor(
         viewModelScope.launch {
             _uploadFlow.value = Resource.Loading
             delay(600)
-            val result = repository.getPageOfCharacters(page.toString())
+            val result = getCharacters(page.toString())
             _uploadFlow.value = result
         }
     }
